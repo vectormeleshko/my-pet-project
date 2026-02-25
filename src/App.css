@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 60px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.controls {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.controls form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.controls input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.toggle-btn {
+  background: #ff7eb3;
+  color: white;
+}
+
+.preview {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+.preview.desktop {
+  width: 100%;
+}
+
+.preview.mobile {
+  width: 375px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  color: #667eea;
+}
+
+.nav-item span {
+  margin-left: 6px;
+  color: red;
+  font-size: 14px;
+}
+
+.burger {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
+}
+
+.burger:hover {
+  color: #667eea;
+}
+
+.mobile-menu {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
