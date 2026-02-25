@@ -30,6 +30,7 @@ function App() {
         links={links}
         removeLink={removeLink}
         isMobile={isMobile}
+        setLinks={setLinks}
       />
     </div>
   );
