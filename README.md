@@ -1,8 +1,8 @@
 # My Pet Project - Responsive Navbar Builder
 
-A small React project to prototype responsive navigation bars.
+Пет проєкт для перевірки знань
 
-## Features
+## Можливості
 
 - Add/remove menu items
 - Toggle between Desktop and Mobile view
@@ -10,7 +10,7 @@ A small React project to prototype responsive navigation bars.
 - Conditional rendering with React hooks
 - Component-based architecture
 
-## Tech Stack
+## Технології
 
 - React (functional components, useState)
 - Vite
